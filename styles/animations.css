@@ -1,0 +1,221 @@
+/* Noise background */
+.noise-bg {
+  background-image: 
+    radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(34, 197, 94, 0.1) 0%, transparent 50%);
+  animation: noise 0.2s infinite linear;
+}
+
+@keyframes noise {
+  0% { transform: translateX(0px) translateY(0px); }
+  10% { transform: translateX(-1px) translateY(-1px); }
+  20% { transform: translateX(1px) translateY(0px); }
+  30% { transform: translateX(0px) translateY(1px); }
+  40% { transform: translateX(1px) translateY(-1px); }
+  50% { transform: translateX(-1px) translateY(1px); }
+  60% { transform: translateX(0px) translateY(0px); }
+  70% { transform: translateX(1px) translateY(1px); }
+  80% { transform: translateX(-1px) translateY(0px); }
+  90% { transform: translateX(0px) translateY(-1px); }
+  100% { transform: translateX(1px) translateY(0px); }
+}
+
+/* Glitch effect */
+.animate-glitch {
+  animation: glitch 0.3s ease-in-out;
+}
+
+@keyframes glitch {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-2px) skewX(2deg); }
+  40% { transform: translateX(2px) skewX(-2deg); }
+  60% { transform: translateX(-1px) skewX(1deg); }
+  80% { transform: translateX(1px) skewX(-1deg); }
+  100% { transform: translateX(0); }
+}
+
+/* Particle animation */
+.animate-particle {
+  animation: particle linear infinite;
+}
+
+@keyframes particle {
+  0% {
+    transform: translateY(100vh) translateX(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-10vh) translateX(50px);
+    opacity: 0;
+  }
+}
+
+/* Scanning line effect */
+.animate-scan {
+  animation: scan 3s linear infinite;
+}
+
+@keyframes scan {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+/* Pulse with delay */
+.animate-pulse-delayed {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  animation-delay: 1s;
+}
+
+/* Radiation glow */
+.radiation-glow {
+  box-shadow: 
+    0 0 20px rgba(34, 197, 94, 0.3),
+    0 0 40px rgba(34, 197, 94, 0.2),
+    0 0 60px rgba(34, 197, 94, 0.1);
+}
+
+/* Text glow */
+.text-glow {
+  text-shadow: 
+    0 0 10px currentColor,
+    0 0 20px currentColor,
+    0 0 30px currentColor;
+}
+
+/* Hover scale animation */
+.hover-scale {
+  transition: transform 0.3s ease-in-out;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+/* Border animation */
+.border-animate {
+  position: relative;
+  overflow: hidden;
+}
+
+.border-animate::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #22c55e, transparent);
+  animation: border-scan 2s linear infinite;
+}
+
+@keyframes border-scan {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/* Static TV effect */
+.tv-static {
+  background: 
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(255, 255, 255, 0.03) 2px,
+      rgba(255, 255, 255, 0.03) 4px
+    );
+}
+
+/* Matrix rain effect (optional) */
+.matrix-rain {
+  background-image: 
+    linear-gradient(transparent 0%, rgba(34, 197, 94, 0.1) 50%, transparent 100%);
+  background-size: 1px 20px;
+  animation: matrix-fall 1s linear infinite;
+}
+
+@keyframes matrix-fall {
+  0% {
+    background-position: 0 -20px;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+/* Loading animation */
+.loading-dots::after {
+  content: '';
+  animation: loading-dots 1.5s steps(4, end) infinite;
+}
+
+@keyframes loading-dots {
+  0%, 20% {
+    content: '';
+  }
+  40% {
+    content: '.';
+  }
+  60% {
+    content: '..';
+  }
+  80%, 100% {
+    content: '...';
+  }
+}
+
+/* Typewriter effect */
+.typewriter {
+  overflow: hidden;
+  border-right: 2px solid #22c55e;
+  white-space: nowrap;
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #22c55e;
+  }
+}
+
+/* Radiation warning pulse */
+.radiation-pulse {
+  animation: radiation-pulse 2s ease-in-out infinite;
+}
+
+@keyframes radiation-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(239, 68, 68, 0);
+  }
+}
