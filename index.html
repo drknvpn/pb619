@@ -8,5 +8,18 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/main.tsx"></script>
+  <style>
+    body {
+      cursor: url('cursorpb619.png'), auto;
+    }
+    /* Для всех кнопок */
+    button {
+      cursor: inherit !important;
+    }
+    /* ИЛИ для всех кликабельных элементов */
+    a, button, [onclick], [role="button"] {
+      cursor: inherit !important;
+    }
+  </style>
   </body>
 </html>
