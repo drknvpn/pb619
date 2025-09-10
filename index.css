@@ -128,3 +128,4 @@
     @apply bg-background text-foreground;
   }
 }
+body { cursor: url('https://raw.githubusercontent.com/drknvpn/pb619/refs/heads/main/cursorpb619.png'), auto; }
