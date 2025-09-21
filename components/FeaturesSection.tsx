@@ -58,7 +58,7 @@ export function FeaturesSection() {
             <div className="absolute inset-0 bg-gradient-to-r from-green-400/20 to-yellow-400/20 blur-xl group-hover:blur-2xl transition-all duration-500" />
             <div className="relative bg-black/50 backdrop-blur-sm border border-green-400/30 rounded-lg overflow-hidden">
               <img
-                src="https://pb619.ru/static/media/screenshot_1.jpg"
+                src="https://pb619.ru/static/media/weapons.png"
                 alt="Weapons Arsenal"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 onError={(e) => {
@@ -72,7 +72,7 @@ export function FeaturesSection() {
                 <div className="text-center text-green-400 font-mono">
                   <div className="text-6xl mb-4">🔫</div>
                   <div className="text-xl">АРСЕНАЛ ОРУЖИЯ</div>
-                  <div className="text-sm mt-2 opacity-60">screenshot_1.jpg</div>
+                  <div className="text-sm mt-2 opacity-60">weapons.png</div>
                 </div>
               </div>
               
@@ -92,7 +92,7 @@ export function FeaturesSection() {
             <div className="absolute inset-0 bg-gradient-to-r from-green-400/20 to-yellow-400/20 blur-xl group-hover:blur-2xl transition-all duration-500" />
             <div className="relative bg-black/50 backdrop-blur-sm border border-green-400/30 rounded-lg overflow-hidden">
               <img
-                src="https://pb619.ru/static/media/screenshot_1.jpg"
+                src="https://pb619.ru/static/media/items.png"
                 alt="Items Collection"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 onError={(e) => {
@@ -106,7 +106,7 @@ export function FeaturesSection() {
                 <div className="text-center text-green-400 font-mono">
                   <div className="text-6xl mb-4">🎒</div>
                   <div className="text-xl">ПРЕДМЕТЫ И АРТЕФАКТЫ</div>
-                  <div className="text-sm mt-2 opacity-60">screenshot_1.jpg</div>
+                  <div className="text-sm mt-2 opacity-60">items.png</div>
                 </div>
               </div>
               
