@@ -58,7 +58,7 @@ export function FeaturesSection() {
             <div className="absolute inset-0 bg-gradient-to-r from-green-400/20 to-yellow-400/20 blur-xl group-hover:blur-2xl transition-all duration-500" />
             <div className="relative bg-black/50 backdrop-blur-sm border border-green-400/30 rounded-lg overflow-hidden">
               <img
-                src="https://pb619.ru/static/media/weapons.png"
+                src="https://raw.githubusercontent.com/drknvpn/pb619/refs/heads/main/multimedia/weapons.png"
                 alt="Weapons Arsenal"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 onError={(e) => {
@@ -92,7 +92,7 @@ export function FeaturesSection() {
             <div className="absolute inset-0 bg-gradient-to-r from-green-400/20 to-yellow-400/20 blur-xl group-hover:blur-2xl transition-all duration-500" />
             <div className="relative bg-black/50 backdrop-blur-sm border border-green-400/30 rounded-lg overflow-hidden">
               <img
-                src="https://pb619.ru/static/media/items.png"
+                src="https://raw.githubusercontent.com/drknvpn/pb619/refs/heads/main/multimedia/items.png"
                 alt="Items Collection"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 onError={(e) => {
